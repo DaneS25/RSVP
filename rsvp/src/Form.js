@@ -31,6 +31,17 @@ export const Form = () => {
       </div>
 
       <div className="form-group">
+        <label className='label-text-attendance'>Will you be attending?</label>
+        <div className="form-control-attending">
+          <input className="yesButton" type="radio" id="yes" name="attending" value="Yes" required />
+          <label htmlFor="yes">Yes</label>
+
+          <input className="noButton" type="radio" id="no" name="attending" value="No" required />
+          <label htmlFor="no">No</label>
+        </div>
+      </div>
+
+      <div className="form-group">
         <button className="form-control-submit" type="submit">
           Submit
         </button>
