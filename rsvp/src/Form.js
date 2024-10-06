@@ -1,12 +1,14 @@
 import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
 
-export const Form = () => {
+export const Form = ({ closeModal }) => {
   const form = useRef();
 
   // Function to send email via EmailJS
   const sendEmail = (e) => {
     e.preventDefault();
+
+    closeModal();
 
     emailjs.sendForm('service_wqp0hv4', 'template_c3qdemo', form.current, '3_FB-mibcvcaR-QGj')
       .then((result) => {
