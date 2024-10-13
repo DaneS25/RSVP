@@ -278,6 +278,7 @@ input {
   appearance: none;
   position: relative;
   padding: 0.5em 1em;
+  margin-top: 10px;
   border: 0;
   background-color: transparent;
   font-family: "Montserrat", sans-serif;
