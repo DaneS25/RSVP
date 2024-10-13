@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 
 body {
   margin: 0;
@@ -67,11 +68,11 @@ body {
 }
 
 .head-text {
-  font-family: "Lora", serif;
-  font-size: 1.5em;
-  color: #ffffff;
+  font-family: "Dancing Script", cursive;
+  font-size: 2em;
+  color: goldenrod;
   z-index: 0;
-  margin-top: -25px;
+  margin-top: -50px;
 }
 
 /* Modal Cover */
@@ -272,99 +273,36 @@ input {
 
 /* Submit button styles */
 .form-control-submit {
-  --border-radius: 0.1px;
-  --border-width: 1px;
-
-  appearance: none;
-  position: relative;
-  padding: 0.5em 1em;
-  margin-top: 10px;
-  border: 0;
-  background-color: transparent;
+  background-color: transparent; /* Transparent background */
+  color: white; /* White text */
+  border: 1px solid goldenrod; /* Gold border */
+  padding: 10px 20px; /* Padding for button size */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: all 0.3s ease; /* Smooth transition for effects */
   font-family: "Montserrat", sans-serif;
   font-family: "Lora", serif;
-  font-size: 1.5em;
-  color: #faf3d7;
+  margin-top: 20px;
 }
 
-.form-control-submit::after {
-  --m-i: linear-gradient(#000, #000);
-  --m-o: content-box, padding-box;
-
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  padding: var(--border-width);
-  border-radius: var(--border-radius);
-  background-image: conic-gradient(#488cfb, #29dbbc, #ddf505, #ff9f0e, #e440bb, #655adc, #488cfb);
-
-  mask-image: var(--m-i), var(--m-i);
-  mask-origin: var(--m-o);
-  mask-clip: var(--m-o);
-  mask-composite: exclude;
-  -webkit-mask-composite: destination-out;
-
-  filter: hue-rotate(0);
-  animation: hue linear 500ms infinite;
-  animation-play-state: paused;
-}
-
-.form-control-submit:hover::after {
-  animation-play-state: running;
+.form-control-submit:hover {
+  background-color: rgba(255, 215, 0, 0.2); /* Light gold tint on hover */
+  transform: scale(1.02); /* Slight enlarge effect */
 }
 
 .btnMain {
-  --border-radius: 0.1px;
-  --border-width: 1px;
-
-  appearance: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  padding: 0.2em 0.5em;
-  border: 0;
-  background-color: transparent;
+  background-color: transparent; /* Transparent background */
+  color: white; /* White text */
+  border: 1px solid goldenrod; /* Gold border */
+  padding: 10px 20px; /* Padding for button size */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: all 0.3s ease; /* Smooth transition for effects */
   font-family: "Montserrat", sans-serif;
   font-family: "Lora", serif;
-  font-size: 1.5em;
-  color: #faf3d7;
 }
 
-.btnMain::after {
-  --m-i: linear-gradient(#000, #000);
-  --m-o: content-box, padding-box;
-
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  padding: var(--border-width);
-  border-radius: var(--border-radius);
-  background-image: conic-gradient(#488cfb, #29dbbc, #ddf505, #ff9f0e, #e440bb, #655adc, #488cfb);
-
-  mask-image: var(--m-i), var(--m-i);
-  mask-origin: var(--m-o);
-  mask-clip: var(--m-o);
-  mask-composite: exclude;
-  -webkit-mask-composite: destination-out;
-
-  filter: hue-rotate(0);
-  animation: hue linear 500ms infinite;
-  animation-play-state: paused;
-}
-
-.btnMain:hover::after {
-  animation-play-state: running;
-}
-
-@keyframes hue {
-  to {
-    filter: hue-rotate(1turn);
-  }
+.btnMain:hover {
+  background-color: rgba(255, 215, 0, 0.2); /* Light gold tint on hover */
+  transform: scale(1.02); /* Slight enlarge effect */
 }
