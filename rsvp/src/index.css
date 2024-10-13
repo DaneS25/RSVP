@@ -7,7 +7,19 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
-  background-color: black;
+
+  /* Black background color */
+  background-color: #131315; /* Same black as your image background */
+
+  /* Blending gradient with the image */
+  background-image: 
+    radial-gradient(circle at center, rgba(0, 0, 0, 0.3), #131315 80%),
+    url('https://images.unsplash.com/photo-1524602997322-c1900e093d3d?q=80&w=2127&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
 }
 
 *,
@@ -17,9 +29,13 @@ body {
 }
 
 .App {
-  width: 90%;
   max-width: 700px;
   margin: 2em auto;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;     /* Center vertically */
+  flex-direction: column;  /* Align items in a column, if needed */
+  margin-top: 220px;
 }
 
 .rsvp {
@@ -46,25 +62,16 @@ body {
   font-family: "Lora", serif;
   font-size: 1.5em;
   font-style: italic;
-  color: #faf3d7;
+  color: #ffffff;
   z-index: 0;
 }
 
 .head-text {
   font-family: "Lora", serif;
   font-size: 1.5em;
-  color: #faf3d7;
+  color: #ffffff;
   z-index: 0;
   margin-top: -25px;
-}
-
-.image-of-us {
-  vertical-align: middle;
-  width: 150px;
-  height: 215px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 /* Modal Cover */
@@ -266,7 +273,7 @@ input {
 /* Submit button styles */
 .form-control-submit {
   --border-radius: 0.1px;
-  --border-width: 4px;
+  --border-width: 1px;
 
   appearance: none;
   position: relative;
@@ -310,14 +317,14 @@ input {
 
 .btnMain {
   --border-radius: 0.1px;
-  --border-width: 4px;
+  --border-width: 1px;
 
   appearance: none;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  padding: 0.5em 1em;
+  padding: 0.2em 0.5em;
   border: 0;
   background-color: transparent;
   font-family: "Montserrat", sans-serif;

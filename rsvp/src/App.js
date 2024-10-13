@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import { Container } from './Container';
-import image from './Daneandran.jpg';
 
 const App = () => {
 const triggerText = 'RSVP';
@@ -12,9 +11,6 @@ const triggerText = 'RSVP';
  };
 return (
   <div className="App">
-    <div className='picturehead'>
-      <img className='image-of-us' src={image} alt="us" />
-    </div>
     <div className='head-text'>
       <h1>Dane & Ran</h1>
     </div>
