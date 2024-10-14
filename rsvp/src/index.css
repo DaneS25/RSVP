@@ -271,6 +271,26 @@ input {
   font-weight: 500;
 }
 
+/* Centering the toast */
+.Toastify__toast-container {
+  position: fixed;
+  width: auto;
+  overflow: hidden; /* Prevent the container from causing any scrollbars */
+  right: 20% !important;
+  transform: translate(-50%, -50%); /* Center it */
+  z-index: 9999; /* Ensure it's above other elements */
+}
+
+/* Dark mode styling */
+.Toastify__toast--dark {
+  background: #333 !important;  /* Dark background */
+  color: #fff !important;        /* Light text */
+}
+
+.Toastify__progress-bar--dark {
+  background-color: #4caf50 !important; /* Customize progress bar color */
+}
+
 /* Submit button styles */
 .form-control-submit {
   background-color: transparent; /* Transparent background */
