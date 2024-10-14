@@ -39,16 +39,6 @@ body {
   margin-left: 40px;
 }
 
-.picturehead {
-  width: 90%;
-  max-width: 700px;
-  margin: 2em auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  vertical-align: middle;
-}
-
 .front-text {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
@@ -88,7 +78,7 @@ body {
 .head-text {
   font-family: "Qwitcher Grypen", cursive;
   font-style:italic;
-  font-size: 3.5em;
+  font-size: 3em;
   color: rgb(255, 255, 255);
   z-index: 0;
   margin-top: -100px;
@@ -139,7 +129,7 @@ body {
   }
 
   .head-text {
-    font-size: 3em;
+    font-size: 2em;
   }
 
   .form-control {
@@ -160,7 +150,7 @@ body {
   }
 
   .head-text {
-    font-size: 3.5em;
+    font-size: 2.8em;
   }
 
   .form-control {
@@ -186,7 +176,7 @@ body {
   }
 
   .head-text {
-    font-size: 3.5em;
+    font-size: 3em;
   }
 
   .form-control {
@@ -212,7 +202,7 @@ body {
   }
 
   .head-text {
-    font-size: 3.5em;
+    font-size: 2.8em;
   }
 
   .form-control {
@@ -238,7 +228,7 @@ body {
   }
 
   .head-text {
-    font-size: 3em;
+    font-size: 2.3em;
   }
 
   .form-control {
@@ -264,7 +254,7 @@ body {
   }
 
   .head-text {
-    font-size: 3.5em;
+    font-size: 3em;
   }
 
   .form-control {
