@@ -12,10 +12,16 @@ const triggerText = 'RSVP';
 return (
   <div className="App">
     <div className='head-text'>
-      <h1>Dane & Ran</h1>
+      <h1>Ran<br></br>+ Dane</h1>
     </div>
     <div className='front-text'>
-      <p>You are invited to our wedding<br></br>29th August 2025<br></br>St Georges, Havelock North, Hawkes Bay<br></br>From 3:00pm - 8:00pm<br></br>Please sumbit your RSVP at your earliest convience<br></br>We hope to see you there<br></br>Thank you</p>
+      <p>Invite you to join them in<br></br>celebration of their marriage<hr /></p>
+    </div>
+    <div className='date-text'>
+      <p>29.08.2025</p>
+    </div>
+    <div className='front-text-2'>
+      <p>3PM at St Georges Restaurant<br></br>452 Saint Georges Road, Havelock North, Hawkes Bay<br></br><br></br>Dress in black formal<br></br><br></br>Please sumbit your RSVP at your earliest convience<br></br>We hope to see you there!</p>
     </div>
     <div className="rsvp">
       <Container triggerText={triggerText} onSubmit={onSubmit} /> 

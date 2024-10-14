@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap');
 
 body {
   margin: 0;
@@ -11,16 +12,6 @@ body {
 
   /* Black background color */
   background-color: #131315; /* Same black as your image background */
-
-  /* Blending gradient with the image */
-  background-image: 
-    radial-gradient(circle at center, rgba(0, 0, 0, 0.3), #131315 80%),
-    url('https://images.unsplash.com/photo-1524602997322-c1900e093d3d?q=80&w=2127&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-  
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-  position: relative;
 }
 
 *,
@@ -30,23 +21,22 @@ body {
 }
 
 .App {
-  max-width: 700px;
+  max-width: 450px;
   margin: 2em auto;
   display: flex;
   justify-content: center; /* Center horizontally */
   align-items: center;     /* Center vertically */
   flex-direction: column;  /* Align items in a column, if needed */
-  margin-top: 220px;
+  margin-top: 40px;
 }
 
 .rsvp {
   width: 90%;
-  max-width: 700px;
-  margin: 2em auto;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: right;
+  align-items: right;
   vertical-align: middle;
+  margin-left: 40px;
 }
 
 .picturehead {
@@ -60,19 +50,53 @@ body {
 }
 
 .front-text {
-  font-family: "Lora", serif;
-  font-size: 1.5em;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 1em;
   font-style: italic;
   color: #ffffff;
   z-index: 0;
+  margin-top: -60px;
+}
+
+.front-text-2 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 1em;
+  font-style: italic;
+  color: #ffffff;
+  z-index: 0;
+  margin-top: -40px;
+}
+
+.date-text {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 2.5em;
+  font-style: italic;
+  color: #ffffff;
+  z-index: 0;
+  margin-top: -40px;
+}
+
+.front-text hr {
+  width: 60%; /* Adjust this to control the length of the line */
+  margin-right: 1px; /* Align the line to the right */
+  border: 1px solid white; /* Customize the thickness and color of the line */
 }
 
 .head-text {
-  font-family: "Dancing Script", cursive;
-  font-size: 2em;
-  color: goldenrod;
+  font-family: "Qwitcher Grypen", cursive;
+  font-style:italic;
+  font-size: 3.5em;
+  color: rgb(255, 255, 255);
   z-index: 0;
-  margin-top: -50px;
+  margin-top: -100px;
+}
+
+.front-text, .head-text, .date-text, .front-text-2 {
+  text-align: right; /* Align text to the right */
+  width: 100%; /* Make sure the text takes the full width of the container */
 }
 
 /* Modal Cover */
@@ -106,131 +130,146 @@ body {
 /* Responsive Styles */
 @media screen and (max-width: 500px) {
   .modal-area {
-    padding: 1.5em 1em; /* Reduce padding for smaller screens */
-    max-width: 80%; /* Ensure modal fits on screen */
+    padding: 1.5em 1em;
+    max-width: 80%;
   }
 
   .front-text, .head-text, .label-text-name, .label-text-email, .label-text-attendance {
-    font-size: 1.2em; /* Smaller font sizes */
+    font-size: 1.2em;
+  }
+
+  .head-text {
+    font-size: 3em;
+  }
+
+  .form-control {
+    padding: 10px;
   }
 }
 
 /* Media Query for Huawei P30 and 1334x750 resolution */
 @media screen and (max-width: 1080px) {
   .modal-area {
-    padding: 2em 1.5em; /* Slightly larger padding for this resolution */
-    max-width: 80%; /* Ensure modal fits on screen */
+    padding: 2em 1.5em;
+    max-width: 80%;
   }
 
-  .front-text,
-  .head-text,
-  .label-text-name,
-  .label-text-email,
-  .label-text-attendance {
-    font-size: 1.5em; /* Adjust font size for readability */
+  .front-text, .label-text-name, .label-text-email, .label-text-attendance {
+    font-size: 1.5em;
+  }
+
+  .head-text {
+    font-size: 3.5em;
   }
 
   .form-control {
-    padding: 10px; /* Adjust padding in form control */
+    padding: 10px;
   }
 }
 
 /* Media Query for 1334 x 750 pixels */
 @media screen and (max-width: 1334px) {
-  .modal-area {
-    padding: 2em 1.5em; /* Ensure padding works well */
-    max-width: 80%; /* Fit modal properly */
-    margin-top: 120px; /* Adjust margin to ensure visibility */
+
+  .App {
+    margin-top: 40px;
   }
 
-  .front-text,
-  .head-text,
-  .label-text-name,
-  .label-text-email,
-  .label-text-attendance {
-    font-size: 1.4em; /* Adjust font size for this resolution */
+  .modal-area {
+    padding: 2em 1.5em;
+    max-width: 40%;
+    margin-top: 50px;
+  }
+
+  .front-text, .label-text-name, .label-text-email, .label-text-attendance {
+    font-size: 1.4em;
+  }
+
+  .head-text {
+    font-size: 3.5em;
   }
 
   .form-control {
-    padding: 10px; /* Consistent padding */
+    padding: 10px;
   }
 }
 
 /* Media Query for iPhone 14 Pro Max */
 @media screen and (max-width: 430px) {
   .App {
-    margin-top: 280px; /* Adjust top margin for iPhone 14 Pro Max */
+    margin-top: 40px;
+    margin-right: 10px;
   }
 
   .modal-area {
-    padding: 2em 1em; /* Ensure padding fits well */
-    max-width: 80%; /* Adjust max-width for better fit */
-    margin-top: 120px; /* Adjust margin to ensure visibility */
+    padding: 2em 1em;
+    max-width: 80%;
+    margin-top: 120px;
   }
 
-  .front-text,
-  .head-text,
-  .label-text-name,
-  .label-text-email,
-  .label-text-attendance {
-    font-size: 1.3em; /* Slightly smaller font sizes for better fit */
+  .front-text, .label-text-name, .label-text-email, .label-text-attendance {
+    font-size: 1.3em;
+  }
+
+  .head-text {
+    font-size: 3.5em;
   }
 
   .form-control {
-    padding: 10px; /* Adjust padding in form control for comfort */
+    padding: 10px;
   }
 }
 
 /* Media Query for iPhone SE */
 @media screen and (max-width: 375px) {
   .App {
-    margin-top: 150px; /* Adjust top margin to ensure form is not cut off */
+    margin-top: 50px;
+    margin-right: 30px;
   }
 
   .modal-area {
-    padding: 2em 1em; /* Ensure padding fits well */
-    max-width: 70%; /* Adjust max-width for smaller screens */
-    margin-top: 120px; /* Adjust margin for SE */
+    padding: 2em 1em;
+    max-width: 90%;
+    margin-top: 60px;
   }
 
-  .front-text,
-  .head-text,
-  .label-text-name,
-  .label-text-email,
-  .label-text-attendance {
-    font-size: 1.2em; /* Smaller font sizes for better fit */
+  .front-text, .label-text-name, .label-text-email, .label-text-attendance {
+    font-size: 1.2em;
+  }
+
+  .head-text {
+    font-size: 3em;
   }
 
   .form-control {
-    padding: 8px; /* Adjust padding in form control */
+    padding: 8px;
   }
 }
 
 /* Media Query for iPhone 12 */
 @media screen and (min-width: 376px) and (max-width: 390px) {
   .App {
-    margin-top: 250px; /* Adjust top margin to ensure form is not cut off */
+    margin-top: 40px;
+    margin-right: 30px;
   }
 
   .modal-area {
-    padding: 2em 1em; /* Ensure padding fits well */
-    max-width: 70%; /* Adjust max-width for smaller screens */
-    margin-top: 120px; /* Adjust margin for iPhone 12 */
+    padding: 2em 1em;
+    max-width: 90%;
+    margin-top: 50px;
   }
 
-  .front-text,
-  .head-text,
-  .label-text-name,
-  .label-text-email,
-  .label-text-attendance {
-    font-size: 1.3em; /* Slightly smaller font sizes for better fit */
+  .front-text, .label-text-name, .label-text-email, .label-text-attendance {
+    font-size: 1.3em;
+  }
+
+  .head-text {
+    font-size: 3.5em;
   }
 
   .form-control {
-    padding: 10px; /* Adjust padding in form control */
+    padding: 1px;
   }
 }
-
 
 ._modal-close {
   position: absolute;
@@ -426,7 +465,7 @@ input {
 .form-control-submit {
   background-color: transparent; /* Transparent background */
   color: white; /* White text */
-  border: 1px solid goldenrod; /* Gold border */
+  border: 1px solid #ccc; /* Gold border */
   padding: 10px 20px; /* Padding for button size */
   font-size: 16px; /* Font size */
   cursor: pointer; /* Pointer cursor on hover */
@@ -437,23 +476,25 @@ input {
 }
 
 .form-control-submit:hover {
-  background-color: rgba(255, 215, 0, 0.2); /* Light gold tint on hover */
-  transform: scale(1.02); /* Slight enlarge effect */
+  background-color: rgba(250, 250, 244, 0.419); /* Light gold tint on hover */
+  transform: scale(1.03); /* Slight enlarge effect */
 }
 
 .btnMain {
   background-color: transparent; /* Transparent background */
   color: white; /* White text */
-  border: 1px solid goldenrod; /* Gold border */
+  border: 1px solid #ccc; /* Gold border */
   padding: 10px 20px; /* Padding for button size */
   font-size: 16px; /* Font size */
   cursor: pointer; /* Pointer cursor on hover */
   transition: all 0.3s ease; /* Smooth transition for effects */
   font-family: "Montserrat", sans-serif;
   font-family: "Lora", serif;
+  text-align: right; /* Align button to the right */
+  float: right;
 }
 
 .btnMain:hover {
-  background-color: rgba(255, 215, 0, 0.2); /* Light gold tint on hover */
-  transform: scale(1.02); /* Slight enlarge effect */
+  background-color: rgba(250, 250, 244, 0.419); /* Light gold tint on hover */
+  transform: scale(1.03); /* Slight enlarge effect */
 }
