@@ -107,7 +107,7 @@ body {
 @media screen and (max-width: 500px) {
   .modal-area {
     padding: 1.5em 1em; /* Reduce padding for smaller screens */
-    max-width: 70%; /* Ensure modal fits on screen */
+    max-width: 80%; /* Ensure modal fits on screen */
   }
 
   .front-text, .head-text, .label-text-name, .label-text-email, .label-text-attendance {
@@ -119,7 +119,7 @@ body {
 @media screen and (max-width: 1080px) {
   .modal-area {
     padding: 2em 1.5em; /* Slightly larger padding for this resolution */
-    max-width: 70%; /* Ensure modal fits on screen */
+    max-width: 80%; /* Ensure modal fits on screen */
   }
 
   .front-text,
@@ -140,6 +140,7 @@ body {
   .modal-area {
     padding: 2em 1.5em; /* Ensure padding works well */
     max-width: 80%; /* Fit modal properly */
+    margin-top: 120px; /* Adjust margin to ensure visibility */
   }
 
   .front-text,
@@ -158,7 +159,7 @@ body {
 /* Media Query for iPhone 14 Pro Max */
 @media screen and (max-width: 430px) {
   .App {
-    margin-top: 150px; /* Adjust top margin for iPhone 14 Pro Max */
+    margin-top: 280px; /* Adjust top margin for iPhone 14 Pro Max */
   }
 
   .modal-area {
@@ -183,13 +184,13 @@ body {
 /* Media Query for iPhone SE */
 @media screen and (max-width: 375px) {
   .App {
-    margin-top: 120px; /* Adjust top margin to ensure form is not cut off */
+    margin-top: 150px; /* Adjust top margin to ensure form is not cut off */
   }
 
   .modal-area {
     padding: 2em 1em; /* Ensure padding fits well */
     max-width: 70%; /* Adjust max-width for smaller screens */
-    margin-top: 160px;
+    margin-top: 120px; /* Adjust margin for SE */
   }
 
   .front-text,
@@ -206,15 +207,15 @@ body {
 }
 
 /* Media Query for iPhone 12 */
-@media screen and (max-width: 390px) {
+@media screen and (min-width: 376px) and (max-width: 390px) {
   .App {
-    margin-top: 180px; /* Adjust top margin to ensure form is not cut off */
+    margin-top: 250px; /* Adjust top margin to ensure form is not cut off */
   }
 
   .modal-area {
     padding: 2em 1em; /* Ensure padding fits well */
-    max-width: 70%;
-    margin-top: 120px; /* Adjust max-width for smaller screens */
+    max-width: 70%; /* Adjust max-width for smaller screens */
+    margin-top: 120px; /* Adjust margin for iPhone 12 */
   }
 
   .front-text,
@@ -229,6 +230,7 @@ body {
     padding: 10px; /* Adjust padding in form control */
   }
 }
+
 
 ._modal-close {
   position: absolute;
