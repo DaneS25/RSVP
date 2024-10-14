@@ -382,6 +382,19 @@ input {
   background-color: #4caf50 !important; /* Customize progress bar color */
 }
 
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 500px) {
+  .Toastify__toast-container {
+    width: 80% !important; /* Limit width on smaller screens */
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .Toastify__toast-container {
+    width: 80% !important; /* Further limit width */
+  }
+}
+
 /* Submit button styles */
 .form-control-submit {
   background-color: transparent; /* Transparent background */
