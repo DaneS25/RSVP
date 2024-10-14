@@ -107,7 +107,7 @@ body {
 @media screen and (max-width: 500px) {
   .modal-area {
     padding: 1.5em 1em; /* Reduce padding for smaller screens */
-    max-width: 90%; /* Ensure modal fits on screen */
+    max-width: 70%; /* Ensure modal fits on screen */
   }
 
   .front-text, .head-text, .label-text-name, .label-text-email, .label-text-attendance {
@@ -119,7 +119,7 @@ body {
 @media screen and (max-width: 1080px) {
   .modal-area {
     padding: 2em 1.5em; /* Slightly larger padding for this resolution */
-    max-width: 90%; /* Ensure modal fits on screen */
+    max-width: 70%; /* Ensure modal fits on screen */
   }
 
   .front-text,
@@ -163,7 +163,7 @@ body {
 
   .modal-area {
     padding: 2em 1em; /* Ensure padding fits well */
-    max-width: 95%; /* Adjust max-width for smaller screens */
+    max-width: 70%; /* Adjust max-width for smaller screens */
     margin-top: 160px;
   }
 
