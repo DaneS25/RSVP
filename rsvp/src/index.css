@@ -134,7 +134,7 @@ body {
     max-width: 80%;
   }
 
-  .front-text, .head-text, .label-text-name, .label-text-email, .label-text-attendance {
+  .front-text, .label-text-name, .label-text-email, .label-text-attendance {
     font-size: 1.2em;
   }
 
@@ -147,11 +147,12 @@ body {
   }
 }
 
-/* Media Query for Huawei P30 and 1334x750 resolution */
+/* Media Query for Huawei P30 resolution */
 @media screen and (max-width: 1080px) {
   .modal-area {
     padding: 2em 1.5em;
     max-width: 80%;
+    margin-top: 20px;
   }
 
   .front-text, .label-text-name, .label-text-email, .label-text-attendance {
@@ -223,13 +224,13 @@ body {
 @media screen and (max-width: 375px) {
   .App {
     margin-top: 50px;
-    margin-right: 30px;
+    margin-right: 20px;
   }
 
   .modal-area {
     padding: 2em 1em;
     max-width: 90%;
-    margin-top: 60px;
+    margin-top: 120px;
   }
 
   .front-text, .label-text-name, .label-text-email, .label-text-attendance {
@@ -421,7 +422,7 @@ input {
 .label-text-name,
 .label-text-email,
 .label-text-attendance {
-  font-family: "Lora", serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.5em;
   color: #faf3d7;
   margin-bottom: 8px;
@@ -471,7 +472,6 @@ input {
   cursor: pointer; /* Pointer cursor on hover */
   transition: all 0.3s ease; /* Smooth transition for effects */
   font-family: "Montserrat", sans-serif;
-  font-family: "Lora", serif;
   margin-top: 20px;
 }
 
@@ -483,18 +483,20 @@ input {
 .btnMain {
   background-color: transparent; /* Transparent background */
   color: white; /* White text */
-  border: 1px solid #ccc; /* Gold border */
-  padding: 10px 20px; /* Padding for button size */
-  font-size: 16px; /* Font size */
+  /*border: 1px solid #ccc; /* Gold border */
+  border-style: none;
+  /*padding: 10px 20px; /* Padding for button size */
+  font-size: 22px; /* Font size */
   cursor: pointer; /* Pointer cursor on hover */
   transition: all 0.3s ease; /* Smooth transition for effects */
   font-family: "Montserrat", sans-serif;
-  font-family: "Lora", serif;
+  /*text-decoration: underline;*/
   text-align: right; /* Align button to the right */
   float: right;
+  border-bottom: 2px solid #ccc;
 }
 
 .btnMain:hover {
-  background-color: rgba(250, 250, 244, 0.419); /* Light gold tint on hover */
-  transform: scale(1.03); /* Slight enlarge effect */
+  /*background-color: rgba(250, 250, 244, 0.419); /* Light gold tint on hover */
+  transform: scale(1.05); /* Slight enlarge effect */
 }
