@@ -155,6 +155,31 @@ body {
   }
 }
 
+/* Media Query for iPhone 14 Pro Max */
+@media screen and (max-width: 430px) {
+  .App {
+    margin-top: 150px; /* Adjust top margin for iPhone 14 Pro Max */
+  }
+
+  .modal-area {
+    padding: 2em 1em; /* Ensure padding fits well */
+    max-width: 80%; /* Adjust max-width for better fit */
+    margin-top: 120px; /* Adjust margin to ensure visibility */
+  }
+
+  .front-text,
+  .head-text,
+  .label-text-name,
+  .label-text-email,
+  .label-text-attendance {
+    font-size: 1.3em; /* Slightly smaller font sizes for better fit */
+  }
+
+  .form-control {
+    padding: 10px; /* Adjust padding in form control for comfort */
+  }
+}
+
 /* Media Query for iPhone SE */
 @media screen and (max-width: 375px) {
   .App {
