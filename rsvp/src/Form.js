@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import emailjs from 'emailjs-com';
 import ReCAPTCHA from "react-google-recaptcha";
 import { ToastContainer, toast } from 'react-toastify';
@@ -9,6 +9,7 @@ export const Form = ({ closeModal }) => {
   const form = useRef();
   const [captchaToken, setCaptchaToken] = useState(null); // Store the reCAPTCHA token
   const [toastId, setToastId] = useState(null); // Track toast ID
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth); // State for screen width
 
   // Function to send email via EmailJS
   const sendEmail = (e) => {
@@ -25,20 +26,19 @@ export const Form = ({ closeModal }) => {
 
     // Proceed with sending the email
     emailjs.sendForm('service_wqp0hv4', 'template_c3qdemo', form.current, '3_FB-mibcvcaR-QGj')
-    .then((result) => {
-      console.log("Email sent successfully:", result.text);
-      toast.success('RSVP sent successfully!', { theme: 'dark' }); // Toast should be triggered here
+      .then((result) => {
+        console.log("Email sent successfully:", result.text);
+        toast.success('RSVP sent successfully!', { theme: 'dark' }); // Toast should be triggered here
 
-      // Reset the form after a successful submission
-      form.current.reset();
-      setCaptchaToken(null);
-      setTimeout(() => closeModal(), 6000); // Delay modal closing to allow toast to display
-      //closeModal();
-    })
-    .catch((error) => {
-      console.error("Error sending email:", error);
-      toast.error('An error occurred, please try again.', { theme: 'dark' });
-    });
+        // Reset the form after a successful submission
+        form.current.reset();
+        setCaptchaToken(null);
+        setTimeout(() => closeModal(), 6000); // Delay modal closing to allow toast to display
+      })
+      .catch((error) => {
+        console.error("Error sending email:", error);
+        toast.error('An error occurred, please try again.', { theme: 'dark' });
+      });
   };
 
   // Handle the reCAPTCHA token
@@ -50,9 +50,21 @@ export const Form = ({ closeModal }) => {
     }
   };
 
+  // Effect to update screen width on resize
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <form ref={form} onSubmit={sendEmail}>
-      <ToastContainer theme="dark"/>
+      <ToastContainer theme="dark" />
       <div className="form-group">
         <label className='label-text-name' htmlFor="name">Name</label>
         <input className="form-control-name" id="name" name="user_name" required />
@@ -78,6 +90,7 @@ export const Form = ({ closeModal }) => {
         sitekey="6LcBG2AqAAAAAD8B1C1Bii_a8Wftn0azwAh99RIU"
         onChange={handleCaptcha} // Handle the token on change
         theme="dark"
+        size={screenWidth <= 500 ? "compact" : "normal"} // Change size based on screen width
       />
 
       <div className="form-group">
