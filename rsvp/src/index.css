@@ -107,10 +107,101 @@ body {
 @media screen and (max-width: 500px) {
   .modal-area {
     padding: 1.5em 1em; /* Reduce padding for smaller screens */
+    max-width: 90%; /* Ensure modal fits on screen */
   }
 
   .front-text, .head-text, .label-text-name, .label-text-email, .label-text-attendance {
     font-size: 1.2em; /* Smaller font sizes */
+  }
+}
+
+/* Media Query for Huawei P30 and 1334x750 resolution */
+@media screen and (max-width: 1080px) {
+  .modal-area {
+    padding: 2em 1.5em; /* Slightly larger padding for this resolution */
+    max-width: 90%; /* Ensure modal fits on screen */
+  }
+
+  .front-text,
+  .head-text,
+  .label-text-name,
+  .label-text-email,
+  .label-text-attendance {
+    font-size: 1.5em; /* Adjust font size for readability */
+  }
+
+  .form-control {
+    padding: 10px; /* Adjust padding in form control */
+  }
+}
+
+/* Media Query for 1334 x 750 pixels */
+@media screen and (max-width: 1334px) {
+  .modal-area {
+    padding: 2em 1.5em; /* Ensure padding works well */
+    max-width: 80%; /* Fit modal properly */
+  }
+
+  .front-text,
+  .head-text,
+  .label-text-name,
+  .label-text-email,
+  .label-text-attendance {
+    font-size: 1.4em; /* Adjust font size for this resolution */
+  }
+
+  .form-control {
+    padding: 10px; /* Consistent padding */
+  }
+}
+
+/* Media Query for iPhone SE */
+@media screen and (max-width: 375px) {
+  .App {
+    margin-top: 120px; /* Adjust top margin to ensure form is not cut off */
+  }
+
+  .modal-area {
+    padding: 2em 1em; /* Ensure padding fits well */
+    max-width: 95%; /* Adjust max-width for smaller screens */
+    margin-top: 160px;
+  }
+
+  .front-text,
+  .head-text,
+  .label-text-name,
+  .label-text-email,
+  .label-text-attendance {
+    font-size: 1.2em; /* Smaller font sizes for better fit */
+  }
+
+  .form-control {
+    padding: 8px; /* Adjust padding in form control */
+  }
+}
+
+/* Media Query for iPhone 12 */
+@media screen and (max-width: 390px) {
+  .App {
+    margin-top: 180px; /* Adjust top margin to ensure form is not cut off */
+  }
+
+  .modal-area {
+    padding: 2em 1em; /* Ensure padding fits well */
+    max-width: 70%;
+    margin-top: 120px; /* Adjust max-width for smaller screens */
+  }
+
+  .front-text,
+  .head-text,
+  .label-text-name,
+  .label-text-email,
+  .label-text-attendance {
+    font-size: 1.3em; /* Slightly smaller font sizes for better fit */
+  }
+
+  .form-control {
+    padding: 10px; /* Adjust padding in form control */
   }
 }
 
