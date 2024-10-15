@@ -21,7 +21,7 @@ return (
       <p>29.08.2025</p>
     </div>
     <div className='front-text-2'>
-      <p>3PM at St Georges Restaurant<br></br>452 Saint Georges Road, Havelock North, Hawkes Bay<br></br><br></br>Dress in black formal<br></br><br></br>Please submit your RSVP at your earliest convience<br></br>We hope to see you there!</p>
+      <p>3PM at St Georges Restaurant<br></br>452 Saint Georges Road, Havelock North, Hawkes Bay<br></br><br></br>Dress in black formal<br></br><br></br>Please submit your RSVP at your earliest convenience<br></br>We hope to see you there!</p>
     </div>
     <div className="rsvp">
       <Container triggerText={triggerText} onSubmit={onSubmit} /> 
