@@ -12,7 +12,7 @@ const triggerText = 'RSVP';
 return (
   <div className="App">
     <div className='head-text'>
-      <h1>Ran Piolo<br></br>+ Dane Sorensen</h1>
+      <h1>Dane Sorensen<br></br>+ Ran Piolo</h1>
     </div>
     <div className='front-text'>
       <p>Invite you to join them in<br></br>celebration of their marriage<hr /></p>

@@ -125,11 +125,11 @@ body {
   }
 
   .front-text, .label-text-name, .label-text-email, .label-text-attendance {
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
 
   .head-text {
-    font-size: 2em;
+    font-size: 1.8em;
   }
 
   .form-control {
@@ -146,11 +146,11 @@ body {
   }
 
   .front-text, .label-text-name, .label-text-email, .label-text-attendance {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
 
   .head-text {
-    font-size: 2.8em;
+    font-size: 2.6em;
   }
 
   .form-control {
@@ -198,11 +198,11 @@ body {
   }
 
   .front-text, .label-text-name, .label-text-email, .label-text-attendance {
-    font-size: 1.3em;
+    font-size: 1.1em;
   }
 
   .head-text {
-    font-size: 2.8em;
+    font-size: 2.6em;
   }
 
   .form-control {
@@ -224,11 +224,11 @@ body {
   }
 
   .front-text, .label-text-name, .label-text-email, .label-text-attendance {
-    font-size: 1.2em;
+    font-size: 1em;
   }
 
   .head-text {
-    font-size: 2.3em;
+    font-size: 2em;
   }
 
   .form-control {
@@ -239,7 +239,7 @@ body {
 /* Media Query for iPhone 12 */
 @media screen and (min-width: 376px) and (max-width: 390px) {
   .App {
-    margin-top: 40px;
+    margin-top: 60px;
     margin-right: 30px;
   }
 
@@ -250,11 +250,11 @@ body {
   }
 
   .front-text, .label-text-name, .label-text-email, .label-text-attendance {
-    font-size: 1.3em;
+    font-size: 1em;
   }
 
   .head-text {
-    font-size: 3em;
+    font-size: 2em;
   }
 
   .form-control {
